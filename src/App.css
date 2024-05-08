@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+#input-area {
+  height: 30vh;
+  width: 40vh;
+  margin: auto;
+}
+
+h1 {
+  border-bottom: 2px solid black;
+}
+h2 {
+  border-bottom: 1px solid black;
+}
+code {
+  background-color: white;
+}
