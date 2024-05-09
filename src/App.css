@@ -1,14 +1,61 @@
-body {
+#body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100vw - 2px);
+}
+
+#editor {
+  max-width: 800px;
+  background-color: aqua;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  height: 30vh;
+  width: 60vw;
+  margin: auto;
+}
+
+#editor > span {
+  padding: 5px;
 }
 
 #input-area {
-  height: 30vh;
-  width: 40vh;
-  margin: auto;
+  background-color: rgb(205, 255, 255);
+  height: 100%;
+}
+
+#markdown-area {
+  background-color: aqua;
+  width: calc(100vw - 40px);
+  max-width: 1000px;
+  margin: 10px auto;
+  border: 1px solid black;
+  padding: 10px;
+  min-height: calc(70vh - 45px);
+  border-radius: 5px;
+}
+
+#markdown-area > p {
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+#markdown-area img {
+  max-width: 100%;
+}
+
+table,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
 }
 
 h1 {
@@ -17,6 +64,13 @@ h1 {
 h2 {
   border-bottom: 1px solid black;
 }
+pre,
 code {
   background-color: white;
+}
+
+blockquote {
+  border-left: 3px solid rgb(52, 52, 52);
+  padding-left: 10px;
+  color: rgb(91, 91, 91);
 }
